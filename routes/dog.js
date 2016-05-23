@@ -9,11 +9,10 @@ router.get('/', function (req, res, next) {
 
 // Add a new dog at /api/animals/dogs
 router.post('/', function (req, res, next) {
-	var id = animals.listBySpecies('Dog').length;
+	var id = animals.listAll().length;
 	var name = req.body.name;
 	var breed = req.body.breed;
 	var color = req.body.color;
-
 
 	var newDog = new Dog(id, name, breed, color);
 	res.status(201).json(animals.add(newDog));

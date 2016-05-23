@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
 
 // Add a new cat at /api/animals/cats
 router.post('/', function (req, res, next) {
-	var id = animals.listBySpecies('Cat').length;
+	var id = animals.listAll().length;
 	var name = req.body.name;
 	var breed = req.body.breed;
 	var color = req.body.color;

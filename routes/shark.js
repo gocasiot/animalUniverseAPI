@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
 
 // Add a new shark at /api/animals/sharks
 router.post('/', function (req, res, next) {
-	var id = animals.listBySpecies('Shark').length;
+	var id = animals.listAll().length;
 	var name = req.body.name;
 	var color = req.body.color;
 

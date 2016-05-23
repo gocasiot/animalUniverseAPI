@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
 
 // Add a new turtle at /api/animals/turtles
 router.post('/', function (req, res, next) {
-	var id = animals.listBySpecies('Turtle').length;
+	var id = animals.listAll().length;
 	var name = req.body.name;
 	var color = req.body.color;
 
