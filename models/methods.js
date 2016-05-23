@@ -2,6 +2,10 @@
 var animals = [];
 
 module.exports = {
+	// Clears the animals array
+	clear: function () {
+		animals.length = 0;
+	},
 	// List all animals
 	listAll: function () {
 		return animals;
