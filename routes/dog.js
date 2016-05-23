@@ -20,7 +20,7 @@ router.post('/', function (req, res, next) {
 
 // Middleware for obtaining id
 router.param('id', function (req, res, next, id) {
-	var animalById = animals.findById(+id);
+	var animalById = animals.findByIdWithinSpecies(+id, 'Dog');
 
 	if(animalById.length === 0) {
 		var err = new Error('not found');

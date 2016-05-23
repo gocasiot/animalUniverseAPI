@@ -17,9 +17,10 @@ module.exports = {
 			return animal.species === species;
 		});
 	},
-	// List animals by Id
-	findById: function (id) {
-		return animals.filter(function (animal) {
+	// List animals by Id within species
+	findByIdWithinSpecies: function (id, species) {
+		var speciesList = this.listBySpecies(species);
+		return speciesList.filter(function (animal) {
 			return animal.id === id;
 		});
 	}
