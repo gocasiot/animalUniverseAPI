@@ -195,7 +195,7 @@
 	```
 
 * Order a specific shark to say its name
-	* GET http://localhost:1337/api/animals/cats/[id]/sayName
+	* GET http://localhost:1337/api/animals/sharks/[id]/sayName
 
 ### Turtle Routes
 * List all turtles
