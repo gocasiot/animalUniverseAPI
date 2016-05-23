@@ -51,8 +51,8 @@ router.get('/:id/getSpeed', function (req, res, next) {
 
 // Order a specific lion to give birth
 router.put('/:id/giveBirth', function (req, res, next) {
-	var color = req.body.color;
-	req.animal[0].giveBirth(color);
+	// Assume all lions are gold
+	req.animal[0].giveBirth('Gold');
 
 	res.status(202).json(req.animal);
 });
