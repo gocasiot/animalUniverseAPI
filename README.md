@@ -4,7 +4,7 @@
 1. Fork and clone this repo
 2. Install node modules (ie. npm install)
 3. Run application (ie. npm start)
-4. Have fun with the api (See details below)
+4. Use the api (See details below)
 
 ## REST API Routes
 ### Animal Routes
